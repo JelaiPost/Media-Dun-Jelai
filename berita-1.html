@@ -17,24 +17,24 @@ body {
 header {
   background: #111;
   color: white;
-  padding: 25px 20px;
   text-align: center;
+  padding: 30px 15px;
 }
 
 header h1 {
   margin: 0;
-  font-size: 30px;
+  font-size: 34px;
 }
 
 header p {
   color: #ccc;
-  margin-bottom: 0;
+  font-size: 18px;
 }
 
 nav {
   background: white;
-  padding: 18px;
   text-align: center;
+  padding: 18px 5px;
   border-bottom: 1px solid #ddd;
 }
 
@@ -45,44 +45,67 @@ nav a {
   margin: 0 12px;
 }
 
-article {
-  max-width: 800px;
-  margin: auto;
-  background: white;
-  padding-bottom: 40px;
+.hero {
+  position: relative;
 }
 
-article img {
+.hero img {
   width: 100%;
+  height: 330px;
+  object-fit: cover;
   display: block;
 }
 
-.content {
+.hero-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   padding: 25px 20px;
+  color: white;
+  background: linear-gradient(transparent, rgba(0,0,0,.85));
 }
 
-.content h2 {
-  font-size: 32px;
-  line-height: 1.15;
-  margin: 0 0 12px;
+.hero-text h2 {
+  margin: 0;
+  font-size: 34px;
 }
 
-.date {
-  color: #777;
-  font-size: 14px;
+.hero-text p {
+  margin-bottom: 0;
+  font-size: 17px;
 }
 
-.content p {
-  font-size: 18px;
-  line-height: 1.7;
+section {
+  padding: 30px 20px;
 }
 
-.back {
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 3px 15px rgba(0,0,0,.08);
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 23px;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.read-more {
   display: inline-block;
-  margin-top: 20px;
-  color: #222;
-  font-weight: bold;
+  margin-top: 8px;
+  background: #111;
+  color: white;
   text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
 }
 
 footer {
@@ -90,8 +113,10 @@ footer {
   color: #aaa;
   text-align: center;
   padding: 25px;
+  margin-top: 30px;
 }
 </style>
+
 </head>
 
 <body>
@@ -103,44 +128,44 @@ footer {
 
 <nav>
   <a href="index.html">Utama</a>
-  <a href="index.html#aktiviti">Aktiviti</a>
-  <a href="#">Berita</a>
-  <a href="#">Hubungi</a>
+  <a href="#aktiviti">Aktiviti</a>
+  <a href="#berita">Berita</a>
+  <a href="#hubungi">Hubungi</a>
 </nav>
 
-<article>
+<div class="hero">
 
-  <img src="IMG_7236.jpeg" alt="Program DUN Jelai">
+  <img src="IMG_7236.jpeg" alt="Aktiviti DUN Jelai">
 
-  <div class="content">
+  <div class="hero-text">
+    <h2>Tiada Janji, Lihat Bukti</h2>
+    <p>Bersama rakyat, membina Jelai.</p>
+  </div>
 
-    <h2>Program Bersama Masyarakat DUN Jelai</h2>
+</div>
 
-    <p class="date">15 Ogos 2026</p>
+<section id="aktiviti">
 
-    <p>
-      Program bersama masyarakat terus menjadi platform mendekati
-      rakyat serta mengeratkan hubungan antara kepimpinan dan
-      masyarakat di DUN Jelai.
-    </p>
+  <h2>Aktiviti Terkini</h2>
 
-    <p>
-      Pelbagai program dan aktiviti akan terus dilaksanakan bagi
-      memastikan kebajikan serta keperluan masyarakat sentiasa
-      diberikan perhatian.
-    </p>
+  <div class="card">
+
+    <h3>Program Bersama Masyarakat</h3>
 
     <p>
-      <strong>Tiada Janji, Lihat Bukti.</strong>
+      Ikuti perkembangan, program dan aktiviti terkini
+      di DUN Jelai.
     </p>
 
-    <a class="back" href="index.html">← Kembali ke Utama</a>
+    <a class="read-more" href="berita-1.html">
+      Baca Selanjutnya →
+    </a>
 
   </div>
 
-</article>
+</section>
 
-<footer>
+<footer id="hubungi">
   Media Komunikasi DUN Jelai
 </footer>
 

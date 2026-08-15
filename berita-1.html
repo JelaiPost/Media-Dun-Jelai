@@ -1,173 +1,255 @@
 <!DOCTYPE html>
 <html lang="ms">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Media DUN Jelai</title>
+  <title>Perkembangan Terkini DUN Jelai | Media DUN Jelai</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  color: #222;
-}
+  <style>
 
-header {
-  background: #111;
-  color: white;
-  text-align: center;
-  padding: 30px 15px;
-}
+    * {
+      box-sizing: border-box;
+    }
 
-header h1 {
-  margin: 0;
-  font-size: 34px;
-}
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #222;
+    }
 
-header p {
-  color: #ccc;
-  font-size: 18px;
-}
+    /* HEADER */
 
-nav {
-  background: white;
-  text-align: center;
-  padding: 18px 5px;
-  border-bottom: 1px solid #ddd;
-}
+    header {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
 
-nav a {
-  color: #111;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 12px;
-}
+    header h1 {
+      margin: 0;
+      font-size: 34px;
+      font-weight: 800;
+    }
 
-.hero {
-  position: relative;
-}
+    header p {
+      margin: 12px 0 0;
+      font-size: 18px;
+      color: #ccc;
+    }
 
-.hero img {
-  width: 100%;
-  height: 330px;
-  object-fit: cover;
-  display: block;
-}
+    /* MENU */
 
-.hero-text {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 25px 20px;
-  color: white;
-  background: linear-gradient(transparent, rgba(0,0,0,.85));
-}
+    nav {
+      background: white;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      padding: 20px 10px;
+    }
 
-.hero-text h2 {
-  margin: 0;
-  font-size: 34px;
-}
+    nav a {
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
 
-.hero-text p {
-  margin-bottom: 0;
-  font-size: 17px;
-}
+    /* ARTIKEL */
 
-section {
-  padding: 30px 20px;
-}
+    .article-wrap {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
 
-.card {
-  background: white;
-  padding: 22px;
-  border-radius: 14px;
-  box-shadow: 0 3px 15px rgba(0,0,0,.08);
-}
+    .article {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    }
 
-.card h3 {
-  margin-top: 0;
-  font-size: 23px;
-}
+    .article-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-.card p {
-  color: #666;
-  line-height: 1.6;
-}
+    .article-content {
+      padding: 35px;
+    }
 
-.read-more {
-  display: inline-block;
-  margin-top: 8px;
-  background: #111;
-  color: white;
-  text-decoration: none;
-  padding: 12px 18px;
-  border-radius: 8px;
-  font-weight: bold;
-}
+    .article-date {
+      font-size: 14px;
+      color: #777;
+    }
 
-footer {
-  background: #111;
-  color: #aaa;
-  text-align: center;
-  padding: 25px;
-  margin-top: 30px;
-}
-</style>
+    .article h2 {
+      font-size: 36px;
+      line-height: 1.15;
+      margin: 10px 0 20px;
+    }
 
+    .article-content p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #444;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 18px;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+    }
+
+    footer p {
+      margin: 0 0 15px;
+      font-weight: bold;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 600px) {
+
+      header h1 {
+        font-size: 29px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+
+      nav {
+        gap: 18px;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+
+      .article-wrap {
+        margin: 25px auto;
+        padding: 0 15px;
+      }
+
+      .article-content {
+        padding: 22px;
+      }
+
+      .article h2 {
+        font-size: 29px;
+      }
+
+      .article-content p {
+        font-size: 17px;
+      }
+
+    }
+
+  </style>
 </head>
 
 <body>
 
-<header>
-  <h1>MEDIA DUN JELAI</h1>
-  <p>Portal Rasmi Media Komunikasi DUN Jelai</p>
-</header>
+  <header>
+    <h1>MEDIA DUN JELAI</h1>
+    <p>Portal Rasmi Media Komunikasi DUN Jelai</p>
+  </header>
 
-<nav>
-  <a href="index.html">Utama</a>
-  <a href="#aktiviti">Aktiviti</a>
-  <a href="#berita">Berita</a>
-  <a href="#hubungi">Hubungi</a>
-</nav>
+  <nav>
+    <a href="index.html">Utama</a>
+    <a href="index.html#aktiviti">Aktiviti</a>
+    <a href="index.html#berita">Berita</a>
+    <a href="index.html#hubungi">Hubungi</a>
+  </nav>
 
-<div class="hero">
+  <main class="article-wrap">
 
-  <img src="IMG_7236.jpeg" alt="Aktiviti DUN Jelai">
+    <article class="article">
 
-  <div class="hero-text">
-    <h2>Tiada Janji, Lihat Bukti</h2>
-    <p>Bersama rakyat, membina Jelai.</p>
-  </div>
+      <img
+        src="IMG_7236.jpeg"
+        alt="Aktiviti DUN Jelai"
+        class="article-image"
+      >
 
-</div>
+      <div class="article-content">
 
-<section id="aktiviti">
+        <span class="article-date">
+          15 Ogos 2026
+        </span>
 
-  <h2>Aktiviti Terkini</h2>
+        <h2>Perkembangan Terkini DUN Jelai</h2>
 
-  <div class="card">
+        <p>
+          DUN Jelai terus memberi tumpuan kepada usaha mendekati rakyat
+          melalui pelbagai program dan aktiviti bersama masyarakat.
+        </p>
 
-    <h3>Program Bersama Masyarakat</h3>
+        <p>
+          Portal Media DUN Jelai diwujudkan bagi memudahkan masyarakat
+          mengikuti perkembangan semasa, program kemasyarakatan serta
+          informasi berkaitan DUN Jelai.
+        </p>
 
-    <p>
-      Ikuti perkembangan, program dan aktiviti terkini
-      di DUN Jelai.
-    </p>
+        <p>
+          Ikuti portal ini untuk mendapatkan perkembangan dan berita
+          terkini dari semasa ke semasa.
+        </p>
 
-    <a class="read-more" href="berita-1.html">
-      Baca Selanjutnya →
+        <a href="index.html#berita" class="back-button">
+          ← Kembali ke Berita
+        </a>
+
+      </div>
+
+    </article>
+
+  </main>
+
+  <footer>
+
+    <p>Media Komunikasi DUN Jelai</p>
+
+    <a
+      href="https://www.facebook.com/share/1CxvMjK7ZE/?mibextid=wwXIfr"
+      target="_blank">
+      Facebook
     </a>
 
-  </div>
+    <a
+      href="https://www.tiktok.com/@mediajelai?_r=1&_t=ZS-98thTYT9fE5"
+      target="_blank">
+      TikTok
+    </a>
 
-</section>
-
-<footer id="hubungi">
-  Media Komunikasi DUN Jelai
-</footer>
+  </footer>
 
 </body>
 </html>

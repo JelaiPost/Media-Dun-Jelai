@@ -1,176 +1,144 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Media DUN Jelai</title>
+<title>Media DUN Jelai</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #222;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
 
-    header {
-      background: #111;
-      color: white;
-      padding: 28px 20px;
-      text-align: center;
-    }
+header {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 30px;
-    }
+header h1 {
+  margin: 0;
+  font-size: 34px;
+}
 
-    header p {
-      margin: 8px 0 0;
-      font-size: 16px;
-      opacity: 0.85;
-    }
+header p {
+  color: #ccc;
+  font-size: 18px;
+}
 
-    nav {
-      background: white;
-      padding: 14px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-    }
+nav {
+  background: white;
+  text-align: center;
+  padding: 18px 5px;
+  border-bottom: 1px solid #ddd;
+}
 
-    nav a {
-      text-decoration: none;
-      color: #111;
-      margin: 0 10px;
-      font-weight: bold;
-      font-size: 14px;
-    }
+nav a {
+  color: #111;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 12px;
+}
 
-    .hero {
-      padding: 55px 20px;
-      text-align: center;
-      background: white;
-    }
+.hero {
+  position: relative;
+}
 
-    .hero h2 {
-      font-size: 34px;
-      margin-bottom: 10px;
-    }
+.hero img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  display: block;
+}
 
-    .hero p {
-      font-size: 18px;
-      color: #666;
-      max-width: 600px;
-      margin: auto;
-      line-height: 1.6;
-    }
+.hero-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 20px;
+  color: white;
+  background: linear-gradient(transparent, rgba(0,0,0,.85));
+}
 
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 30px 20px;
-    }
+.hero-text h2 {
+  margin: 0;
+  font-size: 34px;
+}
 
-    .section-title {
-      font-size: 24px;
-      margin-bottom: 20px;
-    }
+.hero-text p {
+  margin-bottom: 0;
+  font-size: 17px;
+}
 
-    .card {
-      background: white;
-      padding: 22px;
-      margin-bottom: 18px;
-      border-radius: 14px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-    }
+section {
+  padding: 30px 20px;
+}
 
-    .card h3 {
-      margin-top: 0;
-      margin-bottom: 8px;
-    }
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 3px 15px rgba(0,0,0,.08);
+}
 
-    .card p {
-      color: #555;
-      line-height: 1.6;
-      margin-bottom: 0;
-    }
-
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 25px 15px;
-      margin-top: 40px;
-    }
-
-    footer p {
-      margin: 5px 0;
-      font-size: 14px;
-    }
-  </style>
+footer {
+  background: #111;
+  color: #aaa;
+  text-align: center;
+  padding: 25px;
+  margin-top: 30px;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>MEDIA DUN JELAI</h1>
-    <p>Portal Rasmi Media Komunikasi DUN Jelai</p>
-  </header>
+<header>
+  <h1>MEDIA DUN JELAI</h1>
+  <p>Portal Rasmi Media Komunikasi DUN Jelai</p>
+</header>
 
-  <nav>
-    <a href="#utama">Utama</a>
-    <a href="#aktiviti">Aktiviti</a>
-    <a href="#berita">Berita</a>
-    <a href="#hubungi">Hubungi</a>
-  </nav>
+<nav>
+  <a href="#">Utama</a>
+  <a href="#aktiviti">Aktiviti</a>
+  <a href="#">Berita</a>
+  <a href="#">Hubungi</a>
+</nav>
 
-  <section class="hero" id="utama">
+<div class="hero">
+
+  <img src="IMG_7236.jpeg" alt="Aktiviti DUN Jelai">
+
+  <div class="hero-text">
     <h2>Tiada Janji, Lihat Bukti</h2>
+    <p>Bersama rakyat, membina Jelai.</p>
+  </div>
+
+</div>
+
+<section id="aktiviti">
+
+  <h2>Aktiviti Terkini</h2>
+
+  <div class="card">
+    <h3>Program Bersama Masyarakat</h3>
     <p>
       Ikuti perkembangan, program dan aktiviti terkini
       di DUN Jelai.
     </p>
-  </section>
+  </div>
 
-  <main class="container">
+</section>
 
-    <h2 class="section-title" id="aktiviti">Aktiviti Terkini</h2>
-
-    <div class="card">
-      <h3>Program Bersama Masyarakat</h3>
-      <p>
-        Perkembangan dan aktiviti bersama masyarakat DUN Jelai
-        akan dikongsikan di ruangan ini.
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>Khidmat Rakyat</h3>
-      <p>
-        Maklumat berkaitan program kebajikan, pembangunan dan
-        perkhidmatan kepada rakyat.
-      </p>
-    </div>
-
-    <h2 class="section-title" id="berita">Berita Terkini</h2>
-
-    <div class="card">
-      <h3>Media DUN Jelai</h3>
-      <p>
-        Berita dan perkembangan semasa DUN Jelai akan dipaparkan
-        di sini.
-      </p>
-    </div>
-
-  </main>
-
-  <footer id="hubungi">
-    <p><strong>Media Komunikasi DUN Jelai</strong></p>
-    <p>Tiada Janji, Lihat Bukti</p>
-  </footer>
+<footer>
+  Media Komunikasi DUN Jelai
+</footer>
 
 </body>
 </html>

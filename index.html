@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Media DUN Jelai</title>
 
   <style>
+
     * {
       box-sizing: border-box;
     }
@@ -17,6 +19,8 @@
       background: #f5f5f5;
       color: #222;
     }
+
+    /* HEADER */
 
     header {
       background: #111;
@@ -37,6 +41,8 @@
       color: #ccc;
     }
 
+    /* MENU */
+
     nav {
       background: white;
       display: flex;
@@ -52,10 +58,12 @@
       font-size: 16px;
     }
 
+    /* HERO */
+
     .hero {
       position: relative;
       width: 100%;
-      height: 400px;
+      height: 500px;
       overflow: hidden;
       background: #111;
     }
@@ -64,6 +72,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center top;
       display: block;
     }
 
@@ -80,8 +89,8 @@
 
     .hero-text {
       position: absolute;
-      left: 22px;
-      right: 22px;
+      left: 28px;
+      right: 28px;
       bottom: 35px;
       color: white;
       z-index: 2;
@@ -98,8 +107,10 @@
       font-size: 19px;
     }
 
+    /* AKTIVITI */
+
     #aktiviti {
-      padding: 35px 20px;
+      padding: 40px 20px;
       background: #f5f5f5;
     }
 
@@ -113,34 +124,34 @@
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      max-width: 700px;
+      max-width: 875px;
       margin: 0 auto;
     }
 
     .card-image {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-}
-    }.card-image {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  color: #777;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-content {
+      padding: 25px;
+    }
+
+    .card-date {
+      font-size: 13px;
+      color: #777;
     }
 
     .card h3 {
-      font-size: 22px;
-      margin: 8px 0 10px;
+      font-size: 24px;
+      margin: 10px 0;
     }
 
     .card p {
       line-height: 1.6;
       color: #555;
-      margin: 0 0 10px;
+      margin: 0 0 12px;
     }
 
     .read-more {
@@ -150,6 +161,69 @@
       font-weight: bold;
       text-decoration: none;
     }
+
+    /* BERITA */
+
+    #berita {
+      padding: 40px 20px;
+      background: #eeeeee;
+    }
+
+    #berita h2 {
+      font-size: 30px;
+      margin: 0 0 20px;
+    }
+
+    .berita-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .berita-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .berita-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    .berita-content {
+      padding: 20px;
+    }
+
+    .berita-content span {
+      font-size: 13px;
+      color: #777;
+    }
+
+    .berita-content h3 {
+      font-size: 21px;
+      margin: 8px 0 10px;
+    }
+
+    .berita-content p {
+      color: #555;
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .berita-content a {
+      color: #111;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
 
     footer {
       background: #111;
@@ -170,17 +244,14 @@
       font-weight: bold;
     }
 
-    @media (min-width: 601px) {
-      .hero {
-        height: 500px;
-      }
-
-      .hero img {
-        object-position: center 20%;
-      }
-    }
+    /* MOBILE */
 
     @media (max-width: 600px) {
+
+      header {
+        padding: 30px 15px;
+      }
+
       header h1 {
         font-size: 30px;
       }
@@ -190,7 +261,8 @@
       }
 
       nav {
-        gap: 22px;
+        gap: 20px;
+        padding: 18px 8px;
       }
 
       nav a {
@@ -198,7 +270,16 @@
       }
 
       .hero {
-        height: 600px;
+        height: 400px;
+      }
+
+      .hero img {
+        object-position: center top;
+      }
+
+      .hero-text {
+        left: 22px;
+        bottom: 30px;
       }
 
       .hero-text h2 {
@@ -209,89 +290,37 @@
         font-size: 18px;
       }
 
-      #aktiviti h2 {
+      #aktiviti,
+      #berita {
+        padding: 35px 18px;
+      }
+
+      #aktiviti h2,
+      #berita h2 {
         font-size: 28px;
       }
+
+      .berita-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .berita-card img {
+        height: auto;
+      }
+
     }
-    
+
   </style>
+
 </head>
-/* BERITA TERKINI */
 
-#berita {
-  padding: 35px 20px;
-  background: #eeeeee;
-}
-
-#berita h2 {
-  font-size: 30px;
-  margin: 0 0 20px;
-}
-
-.berita-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.berita-card {
-  background: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-}
-
-.berita-card img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  display: block;
-}
-
-.berita-content {
-  padding: 20px;
-}
-
-.berita-content span {
-  font-size: 13px;
-  color: #777;
-}
-
-.berita-content h3 {
-  font-size: 21px;
-  margin: 8px 0 10px;
-}
-
-.berita-content p {
-  color: #555;
-  line-height: 1.5;
-}
-
-.berita-content a {
-  color: #111;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* BERITA MOBILE */
-
-@media (max-width: 600px) {
-  .berita-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .berita-card img {
-    height: auto;
-  }
-}
 <body>
 
   <header>
     <h1>MEDIA DUN JELAI</h1>
     <p>Portal Rasmi Media Komunikasi DUN Jelai</p>
   </header>
+
 
   <nav>
     <a href="#">Utama</a>
@@ -300,85 +329,165 @@
     <a href="#hubungi">Hubungi</a>
   </nav>
 
+
   <div class="hero">
+
     <img src="IMG_7236.jpeg" alt="Aktiviti DUN Jelai">
 
     <div class="hero-text">
       <h2>Tiada Janji,<br>Lihat Bukti</h2>
       <p>Bersama rakyat, membina Jelai.</p>
     </div>
+
   </div>
 
+
   <section id="aktiviti">
+
     <h2>Aktiviti Terkini</h2>
 
     <div class="card">
-      <img src="IMG_7236.jpeg" alt="Aktiviti DUN Jelai" class="card-image">
+
+      <img
+        src="IMG_7236.jpeg"
+        alt="Aktiviti DUN Jelai"
+        class="card-image"
+      >
 
       <div class="card-content">
-        <span class="card-date">15 Ogos 2026</span>
+
+        <span class="card-date">
+          15 Ogos 2026
+        </span>
 
         <h3>Program Bersama Masyarakat</h3>
 
-        <p>Ikuti perkembangan, program dan aktiviti terkini di DUN Jelai.</p>
+        <p>
+          Ikuti perkembangan, program dan aktiviti terkini di DUN Jelai.
+        </p>
 
         <a class="read-more" href="berita-1.html">
           Baca Selanjutnya →
         </a>
+
       </div>
+
     </div>
+
   </section>
-  
-<section id="berita">
 
-  <h2>Berita Terkini</h2>
 
-  <div class="berita-grid">
+  <section id="berita">
 
-    <article class="berita-card">
-      <img src="IMG_7236.jpeg" alt="Berita DUN Jelai">
-      <div class="berita-content">
-        <span>15 Ogos 2026</span>
-        <h3>Perkembangan Terkini DUN Jelai</h3>
-        <p>Ikuti berita, perkembangan dan informasi terkini sekitar DUN Jelai.</p>
-        <a href="berita-1.html">Baca Selanjutnya →</a>
-      </div>
-    </article>
+    <h2>Berita Terkini</h2>
 
-    <article class="berita-card">
-      <img src="IMG_7236.jpeg" alt="Aktiviti DUN Jelai">
-      <div class="berita-content">
-        <span>14 Ogos 2026</span>
-        <h3>Program Bersama Rakyat</h3>
-        <p>Program dan aktiviti bersama masyarakat di sekitar DUN Jelai.</p>
-        <a href="berita-2.html">Baca Selanjutnya →</a>
-      </div>
-    </article>
+    <div class="berita-grid">
 
-    <article class="berita-card">
-      <img src="IMG_7236.jpeg" alt="Media DUN Jelai">
-      <div class="berita-content">
-        <span>13 Ogos 2026</span>
-        <h3>Khidmat Untuk Masyarakat</h3>
-        <p>Informasi mengenai program dan khidmat kepada masyarakat Jelai.</p>
-        <a href="berita-3.html">Baca Selanjutnya →</a>
-      </div>
-    </article>
 
-  </div>
+      <article class="berita-card">
 
-</section>
+        <img
+          src="IMG_7236.jpeg"
+          alt="Berita DUN Jelai"
+        >
+
+        <div class="berita-content">
+
+          <span>15 Ogos 2026</span>
+
+          <h3>Perkembangan Terkini DUN Jelai</h3>
+
+          <p>
+            Ikuti berita, perkembangan dan informasi terkini sekitar DUN Jelai.
+          </p>
+
+          <a href="berita-1.html">
+            Baca Selanjutnya →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="berita-card">
+
+        <img
+          src="IMG_7236.jpeg"
+          alt="Aktiviti DUN Jelai"
+        >
+
+        <div class="berita-content">
+
+          <span>14 Ogos 2026</span>
+
+          <h3>Program Bersama Rakyat</h3>
+
+          <p>
+            Program dan aktiviti bersama masyarakat di sekitar DUN Jelai.
+          </p>
+
+          <a href="berita-2.html">
+            Baca Selanjutnya →
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="berita-card">
+
+        <img
+          src="IMG_7236.jpeg"
+          alt="Media DUN Jelai"
+        >
+
+        <div class="berita-content">
+
+          <span>13 Ogos 2026</span>
+
+          <h3>Khidmat Untuk Masyarakat</h3>
+
+          <p>
+            Informasi mengenai program dan khidmat kepada masyarakat Jelai.
+          </p>
+
+          <a href="berita-3.html">
+            Baca Selanjutnya →
+          </a>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </section>
+
+
   <footer id="hubungi">
+
     <p>Media Komunikasi DUN Jelai</p>
 
-    <a href="https://www.facebook.com/share/1CxvMjK7ZE/?mibextid=wwXIfr" target="_blank">
+    <a
+      href="https://www.facebook.com/share/1CxvMjK7ZE/?mibextid=wwXIfr"
+      target="_blank"
+    >
       Facebook
     </a>
 
-    <a href="https://www.tiktok.com/@mediajelai?_r=1&_t=ZS-98thTYT9fE5" target="_blank">
+    <a
+      href="https://www.tiktok.com/@mediajelai?_r=1&_t=ZS-98thTYT9fE5"
+      target="_blank"
+    >
       TikTok
     </a>
+
   </footer>
 
+
 </body>
+
 </html>

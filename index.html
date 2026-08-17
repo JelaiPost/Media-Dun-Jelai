@@ -96,17 +96,26 @@
     #aktiviti h2 {
       font-size: 30px;
       margin: 0 0 20px;
-    }
-
+   .aktiviti-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
     .card {
-      background: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-      max-width: 875px;
-      margin: 0 auto;
-    }
-
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    width: 100%;
+}
+  .card-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
     .card-image {
       width: 100%;
       height: auto;
@@ -322,33 +331,89 @@
 
     <h2>Aktiviti Terkini</h2>
 
+   <div class="aktiviti-grid">
+
+    <!-- JUADAH MAKMUR -->
     <div class="card">
+        <img src="juadah makmur.jpg"
+             alt="Juadah Makmur Masjid Bukit Betong"
+             class="card-image">
 
-      <img
-        src="IMG_7236.jpeg"
-        alt="Aktiviti DUN Jelai"
-        class="card-image"
-      >
+        <div class="card-content">
+            <span class="card-date">7 Ogos 2026</span>
 
-      <div class="card-content">
+            <h3>Tok Wan Santuni Jemaah Masjid Bukit Betong</h3>
 
-        <span class="card-date">
-          15 Ogos 2026
-        </span>
-
-        <h3>Program Bersama Masyarakat</h3>
-
-        <p>
-          Ikuti perkembangan, program dan aktiviti terkini di DUN Jelai.
-        </p>
-
-        <a class="read-more" href="berita-1.html">
-          Baca Selanjutnya →
-        </a>
-
-      </div>
-
+            <p>
+                Tok Wan menunaikan solat Jumaat di Masjid Bukit Betong,
+                mengagihkan Juadah Makmur kepada para jemaah sebelum
+                singgah ke bengkel batik bersebelahan masjid.
+            </p>
+        </div>
     </div>
+
+
+    <!-- HOMESTAY TANJUNG GAHAI -->
+    <div class="card">
+        <img src="homestay tanjung gahai.jpg"
+             alt="Homestay Tanjung Gahai"
+             class="card-image">
+
+        <div class="card-content">
+            <span class="card-date">7 Ogos 2026</span>
+
+            <h3>Homestay Tanjung Gahai Terus Melakar Nama</h3>
+
+            <p>
+                Perasmian Homestay Tanjung Gahai dan pelancaran Laman Web
+                Homestay Pahang memperkukuh usaha mempromosikan
+                pelancongan desa serta membuka peluang ekonomi kepada
+                masyarakat setempat.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- VETERAN ATM -->
+    <div class="card">
+        <img src="veteran atm.jpg"
+             alt="Veteran ATM Pahang"
+             class="card-image">
+
+        <div class="card-content">
+            <span class="card-date">8 Ogos 2026</span>
+
+            <h3>Jasa Veteran ATM Sentiasa Dihargai</h3>
+
+            <p>
+                Tok Wan merasmikan Persidangan Perwakilan Negeri Ke-65
+                Persatuan Veteran Angkatan Tentera Malaysia Negeri Pahang
+                di FELDA Sungai Koyan 2.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- BIDADARI DAMBAAN SYURGA -->
+    <div class="card">
+        <img src="Bidadri Syurga.jpg"
+             alt="Bidadari Dambaan Syurga"
+             class="card-image">
+
+        <div class="card-content">
+            <span class="card-date">8 Ogos 2026</span>
+
+            <h3>Bidadari Dambaan Syurga Memperkasa Wanita</h3>
+
+            <p>
+                Program Bidadari Dambaan Syurga Parlimen Cameron Highlands
+                di Laman Sejahtera Jelai, Sungai Koyan menjadi wadah
+                memperkukuh kefahaman agama, kekeluargaan dan peranan wanita.
+            </p>
+        </div>
+    </div>
+
+</div>
 
   </section>
 
